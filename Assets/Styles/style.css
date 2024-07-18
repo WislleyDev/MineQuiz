@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'Minegrafia';
+    src: url('Minecraftia-Regular.ttf') format('opentype');
+
+    font-weight: normal;
+}
+
+:root {
+    --font_Mine: 'Minegrafia', Arial;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font_Mine);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../imgs/background.avif') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s left ease-in-out;
+    width: 95vw;
+    height: 95vh;
+    max-width: 500px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.562);
+    border-radius: 20px;
+    opacity: 1;
+}
+
+#home > div {
+    transition-duration: 0.5s;
+    display: flex;
+}
+
+#home > div > h1 {
+    transition-duration: 0.5s;
+    font-size: 4em;
+
+}
+
+#per {
+    position: absolute;
+    top: 50%;
+    left: 200%;
+    transform: translate(-50%, -50%);
+    transition: 1s left ease-in-out;
+    width: 95vw;
+    height: 95vh;
+    max-width: 600px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.562);
+    border-radius: 20px
+    /* opacity: 1; */
+}
+
+#per > div {
+    position: relative;
+    display: flex;
+    gap: 25px;
+}
+
+#per h1 {
+    font-size: 100%;
+}
+
+#opcoes {
+    position: absolute;
+    top: 50%;
+    left: 200%;
+    transform: translate(-50%, -50%);
+    transition: 1s left ease-in-out;
+    width: 95vw;
+    height: 95vh;
+    max-width: 500px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.562);
+    border-radius: 20px;
+    overflow: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#sair {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000008e;
+    opacity: 0;
+    transition: 1s opacity ease-in-out;
+}
+
+#sair > div {
+    width: 95vw;
+    height: 95vh;
+    max-width: 500px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgb(189, 184, 184);
+    border-radius: 20px;
+}
+
+#game_over {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000008e;
+    opacity: 0;
+    transition: 1s opacity ease-in-out;
+}
+
+#game_over > div {
+    width: 95vw;
+    height: 95vh;
+    max-width: 500px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgb(189, 184, 184);
+    border-radius: 20px;
+}
+
+#anuciado {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#numero {
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#numero > p {
+    padding-top: 3px;
+}
+
+button {
+    transition-duration: 0.5s;
+    width: 95vw;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#tela_de_vitoria{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s opacity ease-in-out;
+    width: 95vw;
+    height: 95vh;
+    max-width: 500px;
+    max-height: 500px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.562);
+    border-radius: 20px;
+    opacity: 0;
+}
+
+#btn_on {
+    display: none;
+}
+
+#erros {
+    font-size: 1.3em;
+}
+
+.minecraft-button {
+    background-color: #5e5e5e; /* Cor de fundo do botão */
+    border: 4px solid #3c3c3c; /* Bordas do botão */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    padding-top: 20px;
+    font-size: 20px; /* Tamanho da fonte */
+    text-transform: capitalize; /* Texto em letras maiúsculas */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    box-shadow: 0px 4px 0px #2c2c2c; /* Sombra do botão para efeito de profundidade */
+    transition: all 0.1s ease; /* Transição suave para o efeito de clique */
+}
+
+.minecraft-button:active {
+    box-shadow: 0px 2px 0px #2c2c2c; /* Reduz a sombra ao clicar */
+    transform: translateY(2px); /* Move o botão ligeiramente para baixo ao clicar */
+}
+
+.minecraft-text {
+    position: absolute;
+    top: 5px;
+    left: -60px;
+    font-size: 0.7em;
+    color: #FFAA00; /* Cor amarela */
+    text-shadow: 
+        1px 1px 0 #000, 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 0px 0 #000, 
+        0px 1px 0 #000, 
+        -1px 0px 0 #000, 
+        0px -1px 0 #000; /* Sombra preta para dar o efeito do Minecraft */
+        transform: rotate(-15deg); /* Rotaciona o texto */
+}
+
+/* Estilos básicos para o input range */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 20px;
+    background: #555;
+    border: 2px solid #000;
+    outline: none;
+    box-shadow: 2px 2px 0 #000;
+    border-radius: 0; /* Remover arredondamento */
+}
+
+/* Estilo para o thumb (manipulador) do input range */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #d8d8d8;
+    border: 2px solid #000;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 #000;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #d8d8d8;
+    border: 2px solid #000;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 #000;
+}
+
+/* Estilos para a track (faixa) do input range no Firefox */
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 20px;
+    background: #555;
+    border: 2px solid #000;
+    outline: none;
+    box-shadow: 2px 2px 0 #000;
+    border-radius: 0; /* Remover arredondamento */
+}
+
+@keyframes pulsar {
+    0%, 100% {
+        transform: scale(1) rotate(-15deg);
+    }
+    50% {
+        transform: scale(0.9) rotate(-15deg);
+    }
+}
+
+.minecraft-text {
+    animation: pulsar 1s infinite;
+    display: inline-block;
+}

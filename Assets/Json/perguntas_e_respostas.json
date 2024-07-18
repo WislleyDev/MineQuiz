@@ -1,0 +1,502 @@
+[
+    {
+        "p": "Qual é o material necessário para fazer uma Clava?",
+        "Alternativas": [
+            {
+                "Texto": "Núcleo de Peso",
+                "ID": "alt1_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Núcleo Leve",
+                "ID": "alt1_2",
+                "Certa": false
+            },
+            {
+                "Texto": "Núcleo Explosivo",
+                "ID": "alt1_3",
+                "Certa": false
+            },
+            {
+                "Texto": "Núcleo Pesado",
+                "ID": "alt1_4",
+                "Certa": true
+            }
+        ]
+    },
+    {
+        "p": "Qual mob solta Teias quando derrotado?",
+        "Alternativas": [
+            {
+                "Texto": "Creeper",
+                "ID": "alt2_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Nenhum",
+                "ID": "alt2_2",
+                "Certa": true
+            },
+            {
+                "Texto": "Aranha",
+                "ID": "alt2_3",
+                "Certa": false
+            },
+            {
+                "Texto": "Esqueleto",
+                "ID": "alt2_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Quantos blocos de obsidiana são necessários para criar um portal do Nether básico?",
+        "Alternativas": [
+            {
+                "Texto": "6",
+                "ID": "alt3_1",
+                "Certa": false
+            },
+            {
+                "Texto": "10",
+                "ID": "alt3_2",
+                "Certa": true
+            },
+            {
+                "Texto": "14",
+                "ID": "alt3_3",
+                "Certa": false
+            },
+            {
+                "Texto": "12",
+                "ID": "alt3_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual bioma é conhecido por ter árvores de acácia?",
+        "Alternativas": [
+            {
+                "Texto": "Planícies",
+                "ID": "alt4_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Floresta",
+                "ID": "alt4_2",
+                "Certa": false
+            },
+            {
+                "Texto": "Savana",
+                "ID": "alt4_3",
+                "Certa": true
+            },
+            {
+                "Texto": "Taiga",
+                "ID": "alt4_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual item você usa para remover Sculk mais rapidamente?",
+        "Alternativas": [
+            {
+                "Texto": "Enxada",
+                "ID": "alt5_1",
+                "Certa": true
+            },
+            {
+                "Texto": "Picareta",
+                "ID": "alt5_2",
+                "Certa": false
+            },
+            {
+                "Texto": "Espada",
+                "ID": "alt5_3",
+                "Certa": false
+            },
+            {
+                "Texto": "Machado",
+                "ID": "alt5_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual item é necessário para fazer um Ensopado Suspeito no Minecraft?",
+        "Alternativas": [
+            {
+                "Texto": "Rosa",
+                "ID": "alt6_1",
+                "Certa": true
+            },
+            {
+                "Texto": "Batata",
+                "ID": "alt6_2",
+                "Certa": false
+            },
+            {
+                "Texto": "Beterraba",
+                "ID": "alt6_3",
+                "Certa": false
+            },
+            {
+                "Texto": "Cenoura",
+                "ID": "alt6_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual é o nome do bloco que você pode usar para Fazer Itens de Netherite?",
+        "Alternativas": [
+            {
+                "Texto": "Mesa de Encantamentos",
+                "ID": "alt7_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Mesa de Ferraria",
+                "ID": "alt7_2",
+                "Certa": true
+            },
+            {
+                "Texto": "Bigorna",
+                "ID": "alt7_3",
+                "Certa": false
+            },
+            {
+                "Texto": "Mesa de Cartografia",
+                "ID": "alt7_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual item você usa para Alimentar Axolotes?",
+        "Alternativas": [
+            {
+                "Texto": "Frango",
+                "ID": "alt8_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Balde com Peixe",
+                "ID": "alt8_2",
+                "Certa": true
+            },
+            {
+                "Texto": "Carne de porco",
+                "ID": "alt8_3",
+                "Certa": false
+            },
+            {
+                "Texto": "Peixe cru",
+                "ID": "alt8_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual mob deixa cair Flecha Envenenada quando derrotado?",
+        "Alternativas": [
+            {
+                "Texto": "Esqueleto do Pântano",
+                "ID": "alt9_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Atolado",
+                "ID": "alt9_2",
+                "Certa": true
+            },
+            {
+                "Texto": "Zumbi",
+                "ID": "alt9_3",
+                "Certa": false
+            },
+            {
+                "Texto": "Esqueleto",
+                "ID": "alt9_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual item é necessário para fazer uma Besta?",
+        "Alternativas": [
+            {
+                "Texto": "Gancho de Besta",
+                "ID": "alt10_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Barra de Prata",
+                "ID": "alt10_2",
+                "Certa": false
+            },
+            {
+                "Texto": "Gancho de Armadilha",
+                "ID": "alt10_3",
+                "Certa": true
+            },
+            {
+                "Texto": "Arco e Flecha",
+                "ID": "alt10_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual é o nome do item que permite voar no modo sobrevivência?",
+        "Alternativas": [
+            {
+                "Texto": "Elytra",
+                "ID": "alt11_1",
+                "Certa": true
+            },
+            {
+                "Texto": "Elitra",
+                "ID": "alt11_2",
+                "Certa": false
+            },
+            {
+                "Texto": "Elaitra",
+                "ID": "alt11_3",
+                "Certa": false
+            },
+            {
+                "Texto": "Elytro",
+                "ID": "alt11_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual mob solta Pólvora Quando Derrotado?",
+        "Alternativas": [
+            {
+                "Texto": "Enderman",
+                "ID": "alt12_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Dinamite",
+                "ID": "alt12_2",
+                "Certa": false
+            },
+            {
+                "Texto": "Creper",
+                "ID": "alt12_3",
+                "Certa": false
+            },
+            {
+                "Texto": "Ghast",
+                "ID": "alt12_4",
+                "Certa": true
+            }
+        ]
+    },
+    {
+        "p": "Qual bioma é conhecido por ter esmeraldas em seu subsolo?",
+        "Alternativas": [
+            {
+                "Texto": "Planícies",
+                "ID": "alt13_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Taiga",
+                "ID": "alt13_2",
+                "Certa": false
+            },
+            {
+                "Texto": "Montanhas",
+                "ID": "alt13_3",
+                "Certa": true
+            },
+            {
+                "Texto": "Planícies das Esmeraldas",
+                "ID": "alt13_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual item é necessário para criar um Pistão Grudento?",
+        "Alternativas": [
+            {
+                "Texto": "Grude",
+                "ID": "alt14_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Cola",
+                "ID": "alt14_2",
+                "Certa": false
+            },
+            {
+                "Texto": "Bola de Slime",
+                "ID": "alt14_3",
+                "Certa": true
+            },
+            {
+                "Texto": "Slime",
+                "ID": "alt14_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual o Nome da Nova Estrutura do Minecraft?",
+        "Alternativas": [
+            {
+                "Texto": "Trals Chambers",
+                "ID": "alt15_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Trials Chambers",
+                "ID": "alt15_2",
+                "Certa": true
+            },
+            {
+                "Texto": "Trials Chambes",
+                "ID": "alt15_3",
+                "Certa": false
+            },
+            {
+                "Texto": "Trials Chanbers",
+                "ID": "alt15_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual o Nome do Item que Planta uma Árvore de Mange?",
+        "Alternativas": [
+            {
+                "Texto": "Muda de Mange",
+                "ID": "alt16_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Propágulo de Mangue",
+                "ID": "alt16_2",
+                "Certa": true
+            },
+            {
+                "Texto": "Propagulo de Mangue",
+                "ID": "alt16_3",
+                "Certa": false
+            },
+            {
+                "Texto": "Semente de Mangue",
+                "ID": "alt16_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual é o Tema da dimensão de 1º de Abril de 2024?",
+        "Alternativas": [
+            {
+                "Texto": "Doces",
+                "ID": "alt17_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Sonhos",
+                "ID": "alt17_2",
+                "Certa": false
+            },
+            {
+                "Texto": "Batatas Envenenadas",
+                "ID": "alt17_3",
+                "Certa": true
+            },
+            {
+                "Texto": "Batatas",
+                "ID": "alt17_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual item é necessário para criar um Projetio de Vento?",
+        "Alternativas": [
+            {
+                "Texto": "Vara de Vórtice",
+                "ID": "alt18_1",
+                "Certa": true
+            },
+            {
+                "Texto": "Vara de Vortice",
+                "ID": "alt18_2",
+                "Certa": false
+            },
+            {
+                "Texto": "Vara de Vento",
+                "ID": "alt18_3",
+                "Certa": false
+            },
+            {
+                "Texto": "Vara de Ventania",
+                "ID": "alt18_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual é o Efeito que Aumenta a Dificudade e Melhora os Loots nas Câmaras do Julgamento?",
+        "Alternativas": [
+            {
+                "Texto": "Sorte",
+                "ID": "alt19_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Loot",
+                "ID": "alt19_2",
+                "Certa": false
+            },
+            {
+                "Texto": "Mau presságio",
+                "ID": "alt19_3",
+                "Certa": true
+            },
+            {
+                "Texto": "Desafio",
+                "ID": "alt19_4",
+                "Certa": false
+            }
+        ]
+    },
+    {
+        "p": "Qual bloco é usado para criar um bicon?",
+        "Alternativas": [
+            {
+                "Texto": "Vidro",
+                "ID": "alt20_1",
+                "Certa": false
+            },
+            {
+                "Texto": "Obsidiana",
+                "ID": "alt20_2",
+                "Certa": false
+            },
+            {
+                "Texto": "Estrela do Nether",
+                "ID": "alt20_3",
+                "Certa": false
+            },
+            {
+                "Texto": "Todos os itens acima",
+                "ID": "alt20_4",
+                "Certa": true
+            }
+        ]
+    }
+]

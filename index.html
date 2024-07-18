@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Quiz</title>
+    <link rel="stylesheet" href="Assets/Styles/style.css">
+    <link rel="shortcut icon" href="Assets/Icons/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos para a tela de carregamento */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0e0e0e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            text-align: center;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+        }
+        
+        .loading-screen h1 {
+            color: #FFAA00;
+            text-shadow: 
+                1px 1px 0 #000, 
+                -1px -1px 0 #000, 
+                1px -1px 0 #000, 
+                -1px 1px 0 #000, 
+                1px 0px 0 #000, 
+                0px 1px 0 #000, 
+                -1px 0px 0 #000, 
+                0px -1px 0 #000;
+            transform: rotate(-5deg);
+        }
+        
+        .progress-bar {
+            width: 100%;
+            background-color: #555;
+            border: 2px solid #000;
+            box-shadow: 2px 2px 0 #000;
+            height: 30px;
+            position: relative;
+            margin-top: 20px;
+        }
+        
+        .progress {
+            width: 0;
+            height: 100%;
+            background-color: #FFAA00;
+            animation: loading 1s linear forwards;
+        }
+        
+        @keyframes loading {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-screen">
+        <div>
+            <h1>Mine Quiz</h1>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="home">
+        <div>
+            <h1>Mine Quiz</h1>
+            <p class="minecraft-text">Vá nas opções e ative a música de fundo caso ela não esteja tocando!</p>
+        </div>
+        <button class="minecraft-button" id="btn_iniciar">Iniciar</button>
+        <button class="minecraft-button" id="btn_opcoes">Opções</button>
+        <button class="minecraft-button" id="btn_sair">Sair</button>
+    </div>
+    
+    <div id="opcoes">
+        <h1>Opções</h1>
+        <h3>Opções de Áudio</h3>
+        <button class="minecraft-button" id="controleMusica">Música On</button>
+        <h2>Volume:</h2>
+        <input type="range" name="volume" id="volumeControl" min="0" max="1" step="0.01" value="0.5">
+    <button class="minecraft-button" id="btn_home">Home</button>
+    </div>
+    
+    <div id="per">
+        <div id="anuciado">
+            <div id="numero">
+                <p>1</p>
+            </div>
+            <h1>Pergunta</h1>
+        </div>
+        <div>
+            <button class="minecraft-button btn_res" id="res1">Resposta 1</button>
+            <button class="minecraft-button btn_res" id="res2">Resposta 2</button>
+        </div>
+        <div>
+            <button class="minecraft-button btn_res" id="res3">Resposta 3</button>
+            <button class="minecraft-button btn_res" id="res4">Resposta 4</button>
+        </div>
+    </div>
+    
+    <div id="sair">
+        <div>
+            <h2>Você Realmente Deseja Sair?</h2>
+            <button class="minecraft-button" id="sim">Sim</button>
+            <button class="minecraft-button" id="nao">Não</button>
+        </div>
+    </div>
+    <div id="game_over">
+        <div>
+            <h2>Mais Sorte Na Proxima!</h2>
+            <button class="minecraft-button" id="game_over_btn_reset">Recomeçar</button>
+            <button class="minecraft-button" id="game_over_btn_home">Home</button>
+        </div>
+    </div>
+    <div id="tela_de_vitoria">
+            <h2>Parabéns Você Terminou o Quiz!</h2>
+            <p id="erros">Erros: <span>00</span></p>
+            <p>Fique Atento Para Novas Atualizações!</p>
+            <button class="minecraft-button" id="win_btn_home">Home</button>
+    </div>
+
+    <audio id="musica" src="Assets/Audios/Minecraft.mp3" autoplay></audio>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.querySelector('.loading-screen').style.display = 'none'
+                document.getElementById('home').style.display = 'flex'
+            }, 1000) // 10000 ms = 10 s
+        })
+    </script>
+    <script src="Assets/Js/Audio.js"></script>
+    <script src="Assets/Js/script.js"></script>
+    <script src="Assets/Js/Quiz.js"></script>
+</body>
+</html>

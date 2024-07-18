@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Música</title>
+    <style>
+        #controleMusica {
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #volumeControl {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <audio id="musica" src="Assets/Audios/Minecraft.mp3" autoplay></audio>
+    <button id="controleMusica">Música OFF</button>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('musica');
+            const controleMusicaBtn = document.getElementById('controleMusica');
+            const volumeControl = document.getElementById('volumeControl');
+
+            // Inicializar volume do áudio
+            audio.volume = volumeControl.value;
+
+            // Função para atualizar o texto do botão
+            function atualizarBotao() {
+                if (audio.paused) {
+                    controleMusicaBtn.textContent = 'Música OFF';
+                } else {
+                    controleMusicaBtn.textContent = 'Música ON';
+                }
+            }
+
+            // Adicionar evento de clique ao botão
+            controleMusicaBtn.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+                atualizarBotao();
+            });
+
+            // Adicionar evento de input ao controle de volume
+            volumeControl.addEventListener('input', () => {
+                audio.volume = volumeControl.value;
+            });
+
+            // Tentar iniciar a música automaticamente ao carregar a página
+            audio.play().then(() => {
+                // Música começou a tocar automaticamente
+                atualizarBotao();
+            }).catch(error => {
+                // Autoplay bloqueado pelo navegador
+                console.log('Autoplay bloqueado:', error);
+                atualizarBotao();
+            });
+        });
+    </script>
+</body>
+</html>
