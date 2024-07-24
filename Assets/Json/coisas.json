@@ -1,0 +1,10 @@
+[
+    {
+        "Nome":"Mine Quiz",
+        "Img_de_Fundo":"Assets/imgs/background.avif",
+        "Nome_da_Fonte":"Minegrafia",
+        "Font_Family":"Assets/Styles/Minecraftia-Regular.ttf",
+        "Musica_de_Fundo":"https://vgmsite.com/soundtracks/minecraft/esiyjzozpe/1-08.%20Minecraft.mp3",
+        "Favicon":"https://img.icons8.com/?size=256&id=T8jnLQYyUl4U&format=png"
+    }
+]

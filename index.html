@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mine Quiz</title>
     <link rel="stylesheet" href="Assets/Styles/style.css">
-    <link rel="shortcut icon" href="Assets/Icons/favicon.ico" type="image/x-icon">
+    <link id="favicon" rel="shortcut icon" href="Assets/Icons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         /* Estilos para a tela de carregamento */
@@ -65,7 +65,7 @@
 <body>
     <div class="loading-screen">
         <div>
-            <h1>Mine Quiz</h1>
+            <h1 class="titulo">Mine Quiz</h1>
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
@@ -74,7 +74,7 @@
     
     <div id="home">
         <div>
-            <h1>Mine Quiz</h1>
+            <h1 class="titulo">MineQuiz</h1>
             <p class="minecraft-text">Vá nas opções e ative a música de fundo caso ela não esteja tocando!</p>
         </div>
         <button class="minecraft-button" id="btn_iniciar">Iniciar</button>
@@ -84,10 +84,10 @@
     
     <div id="opcoes">
         <h1>Opções</h1>
-        <h3>Opções de Áudio</h3>
+        <h2>Opções de Áudio</h2>
         <button class="minecraft-button" id="controleMusica">Música On</button>
-        <h2>Volume:</h2>
-        <input type="range" name="volume" id="volumeControl" min="0" max="1" step="0.01" value="0.5">
+        <h3>Volume:</h3>
+        <input type="range" name="volume" id="volumeControl" min="0" max="1" step="0.01" value="1">
     <button class="minecraft-button" id="btn_home">Home</button>
     </div>
     
@@ -129,8 +129,36 @@
             <button class="minecraft-button" id="win_btn_home">Home</button>
     </div>
 
-    <audio id="musica" src="Assets/Audios/Minecraft.mp3" autoplay></audio>
+    <audio id="musica" src="" autoplay></audio>
     <script>
+        let musica = document.querySelector('#musica')
+
+        fetch('Assets/Json/coisas.json')
+        .then(response => response.json()) // Converte a resposta para JSON
+        .then(data => {
+            // Cria uma nova regra de @font-face dinamicamente
+            const font = new FontFace(data[0].Nome_da_Fonte, `url(${data[0].Font_Family})`)
+            font.load().then(function(loadedFont) {
+                // Adiciona a fonte ao document
+                document.fonts.add(loadedFont)
+                // Define a fonte no CSS usando o nome da fonte
+                document.querySelector('body').style.fontFamily = data[0].Nome_da_Fonte
+            }).catch(function(error) {
+                console.error('Erro ao carregar a fonte:', error)
+            })
+        
+            // Configurações restantes do seu JSON
+            document.querySelectorAll('.titulo').forEach(element => {
+                element.innerText = data[0].Nome
+                
+            })
+
+            document.querySelector('title').innerText = data[0].Nome
+            document.querySelector('#favicon').href = data[0].Favicon
+            document.querySelector('body').style.backgroundImage = `url('${data[0].Img_de_Fundo}')`
+            document.querySelector('#musica').src = data[0].Musica_de_Fundo
+        })
+
         window.addEventListener('load', function() {
             setTimeout(function() {
                 document.querySelector('.loading-screen').style.display = 'none'
