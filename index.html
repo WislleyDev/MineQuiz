@@ -153,10 +153,29 @@
                 
             })
 
-            document.querySelector('title').innerText = data[0].Nome
-            document.querySelector('#favicon').href = data[0].Favicon
-            document.querySelector('body').style.backgroundImage = `url('${data[0].Img_de_Fundo}')`
-            document.querySelector('#musica').src = data[0].Musica_de_Fundo
+            try {
+                document.querySelector('title').innerText = data[0].Nome
+            } catch (error) {
+                console.error(error)
+            }
+
+            try {
+                document.querySelector('#favicon').href = data[0].Favicon
+            } catch (error) {
+                console.error(error)
+            }
+
+            try {
+                document.querySelector('body').style.backgroundImage = `url('${data[0].Img_de_Fundo}')`
+            } catch (error) {
+                console.error(error)
+            }
+
+            try {
+                document.querySelector('#musica').src = data[0].Musica_de_Fundo
+            } catch (error) {
+                console.error(error)
+            }
         })
 
         window.addEventListener('load', function() {
